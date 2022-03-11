@@ -14,17 +14,21 @@ describe('/POST AddBook', () => {
   });;
   let isbn = faker.random.alphaNumeric(5);
   let bookId = isbn + aisle;
+  let bookName = "Learn Appium Automation with Java";
 
   it('Should verify if book is successfully added', () => {
 
     const requestBody = {
-      name: "Learn Appium Automation with Java",
+      name: bookName,
       isbn: isbn,
       aisle: aisle,
       author: authorName,
     };
     //Print the request body
     console.log(requestBody);
+    process.env.BOOK_NAME = bookName;
+    process.env.ISBN = isbn;
+    process.env.AISLE = aisle;
 
     return request
     .post(url)

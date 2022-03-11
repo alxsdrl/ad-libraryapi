@@ -20,9 +20,9 @@ describe('/GET GetBook', () => {
 			.then((response) => {
 				expect((response) => {
 					response.body.should.containEql({
-						book_name: 'Learn Appium Automation with Java',
-						isbn: 'h886o',
-						aisle: '295',
+						book_name: '${BOOK_NAME}',
+						isbn: '${ISBN}',
+						aisle: '${AISLE}',
 					})
 				})
       //Print the response body
