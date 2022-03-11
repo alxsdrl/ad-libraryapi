@@ -1,0 +1,22 @@
+{
+  "name": "apialexisderilo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 20000"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fakerjs/letter": "^2.2.2",
+    "@types/faker": "^6.6.9",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.1",
+    "supertest": "^6.2.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^6.0.0-beta.0",
+    "cucumber": "^6.0.5"
+  }
+}
