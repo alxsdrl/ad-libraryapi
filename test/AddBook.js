@@ -40,7 +40,7 @@ describe('/POST AddBook', () => {
       expect((response) => {
         //Verify 'successfully added' message on the response JSON
         //Verify if the book 'ID' is the ISBN value
-        res.body.should.containEql({
+        response.body.should.containEql({
           Msg: 'successfully added',
           ID: bookId,
         })
